@@ -1,0 +1,32 @@
+import { Link, navigate } from 'gatsby';
+
+import React from 'react';
+
+function goToSlicemasters() {
+  console.log('Go to Slice Masters');
+  setTimeout(() => {
+    console.log('Set timeout');
+    navigate('/slicemaster', { replace: true });
+  }, 2000);
+}
+
+export default function Nav() {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+          {/* <a href="/">Home</a> */}
+        </li>
+        <li>
+          <Link to="/beers">Beers</Link>
+        </li>
+        <li>
+          <button onClick={goToSlicemasters} type="button">
+            Hello Im working on it
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
