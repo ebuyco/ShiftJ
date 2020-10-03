@@ -1,5 +1,4 @@
 import bg from '../assets/images/bg.svg';
-/*eslint-disable*/
 import { createGlobalStyle } from 'styled-components';
 import stripes from '../assets/images/stripes.svg';
 

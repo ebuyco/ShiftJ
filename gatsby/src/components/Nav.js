@@ -1,17 +1,13 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import styled from 'styled-components';
 
-function goToSlicemasters() {
-  console.log('Go to Slice Masters');
-  setTimeout(() => {
-    console.log('Set timeout');
-    navigate('/slicemaster', { replace: true });
-  }, 2000);
-}
-
+const NavStyle = styled.nav`
+  background: green;
+`;
 export default function Nav() {
   return (
-    <nav>
+    <NavStyle>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -29,6 +25,6 @@ export default function Nav() {
           <Link to="/order/">Order Ahead!</Link>
         </li>
       </ul>
-    </nav>
+    </NavStyle>
   );
 }
